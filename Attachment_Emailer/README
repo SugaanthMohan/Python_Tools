@@ -1,0 +1,24 @@
+~ SYNOPSIS :
+        - The script is mainly used to send one or many attachements as an email. for your desired purposes.
+
+~ PYTHON VERSION : PYTHON 3.5
+
+~ PYTHON PACKAGES :
+        import smtplib
+        from os.path import basename
+        from email.mime.application import MIMEApplication
+        from email.mime.multipart import MIMEMultipart
+        from email.mime.text import MIMEText
+        from email.utils import COMMASPACE, formatdate
+
+
+~ SCRIPT NAME : Attachment_Emailer.py
+
+~ USAGE :
+        - send_from     - should be a scalar value (CAN BE SET WITH A DEFAULT VALUE).
+        - send_to       - can be list, tuple or join of strings by COMMA (CAN BE SET WITH A DEFAULT VALUE).
+        - subject       - should be a scalar value (CAN BE SET WITH A DEFAULT VALUE).
+        - text          - The Body of the email is set here.
+        - files         - The total files that are going to be sent.
+        - server        - should be set based on requirement, should be authenticated if the email should not be sent to spam or
+                          it should be white listed. (CAN BE SET WITH A DEFAULT VALUE).
