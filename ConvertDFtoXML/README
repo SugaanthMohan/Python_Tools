@@ -1,0 +1,29 @@
+~ SYNOPSIS :
+	- The Data Frame to XML is a function that is used to convert the DataFrame into a Simple XML which can be used to transfer information
+	  across different types of applications with the similar benefits of xml
+
+
+
+~ PYTHON VERSION : PYTHON 3.5
+
+~ PYTHON PACKAGES :
+	- import pandas.(Pandas Dataframe and all of its dependent module used to read csv and convert it into a dataframe)
+	
+~ SCRIPT NAME : ConvertDFtoXML.py
+
+~ USAGE :
+	The prepareXML function consists of a set of arguments that returns XML in a string format. The arguments are 
+		1.) DataFrame_ 		- It is the Dataframe which you wish to convert to XML
+		2.) Root_ 		- It is the Root Tag which you are going to use  
+					  (IF NOT PARSED IN ARGUMENT, DOES NOT CREATE [DEFAULT = FALSE] )
+		3.) Tag_ 		- It is the internal tag that you use to separate the XML between its types
+					  (IF NOT PARSED IN ARGUMENT, DOES NOT CREATE [DEFAULT = FALSE] )
+		4.) AttributeName_	- It is used to create the tag containing the attributes of xml where 
+					  we use the column name and its features
+		5.) OutFile_ 		- It is the file that you are going to append the XML to for the change you are going to give.
+					  (IF NOT PARSED IN ARGUMENT, DOES NOT CREATE [DEFAULT = FALSE] )
+
+~ CONSTRAINTS :
+	- By Default the column names will be used as the attribute name which you are going to set.
+	- The Default value handling must be done.
+	- All `NaN' Values are set to be Null for my personal use, you can alter it.

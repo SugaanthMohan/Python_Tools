@@ -1,0 +1,10 @@
+Field,Type,Null,Key,Default,Extra
+nb_name,varchar(30),NO,,NULL,
+nb_udp_socket_id,varchar(30),NO,,NULL,
+nb_parent_table,varchar(30),YES,,NULL,
+nb_mirror_table,varchar(30),YES,,NULL,
+nb_data_retrieval_sp,varchar(30),YES,,NULL,
+nb_data_insert_sp,varchar(30),YES,,NULL,
+nb_data_update_sp,varchar(30),YES,,NULL,
+nb_master_retrieval_sp,varchar(30),YES,,NULL,
+nb_db_source,varchar(30),YES,,NULL,
