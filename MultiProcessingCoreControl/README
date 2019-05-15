@@ -1,0 +1,28 @@
+~ SYNOPSIS :
+	- The script allows you to perform multiple processes parallely, faster with better performance.
+	- Since a Production/Work Environment might have other parallel processing's running over, You need to be vigilant on how much
+	  Cores/Resources you use for your own process. In the case that your process is very important, you can use this script.
+	
+~ PYTHON VERSION : PYTHON 3.5
+
+~ PYTHON PACKAGES :
+	import multiprocessing 
+	import time (Optional, Just used for script purposes)
+	
+~ SCRIPT NAME : MultiProcessingCoreContorl.py
+
+~ USAGE :
+	- Set the TotalCoreUsage for parallel processing, in the case that you have, my default is always 70% i.e, 70/100
+		- 2 cores => round( 2 * 0.7 ) = 1.4 = 1 core //
+		- 3 cores => round( 3 * 0.7 ) = 2.1 = 2 cores //
+		- 4 cores => round( 4 * 0.7 ) = 2.8 = 3 cores //
+		- 5 cores => round( 5 * 0.7 ) = 3.5 = 4 cores //
+
+~ CONSTRAINTS :
+	- Your script performance may also be affected by other factors such as,
+		- Database		=> In the case that you are running your query, the script will have to wait till its complete, 
+					   and a deadlock could be formed if read and write happen at the same time.
+		- Network Connection	=> Incase you are uploading a file to FTP,Drive, etc.. and sharing the same network for a single server,
+					   The upload speed might be the same and you'll have to wait for the uploads to complete
+		- Responses		=> If your script is waiting for responses such as json from webpage or RESTAPI, it might be delayed, since your
+					   performance depends on its responses also.
