@@ -1,5 +1,5 @@
 ~ SYNOPSIS :
-	- The script allows you to perform multiple processes parallely, faster with better performance.
+	- The script allows you allocate cores based on your machine/server and perform multiple processes parallely, faster with better performance.
 	- Since a Production/Work Environment might have other parallel processing's running over, You need to be vigilant on how much
 	  Cores/Resources you use for your own process. In the case that your process is very important, you can use this script.
 	

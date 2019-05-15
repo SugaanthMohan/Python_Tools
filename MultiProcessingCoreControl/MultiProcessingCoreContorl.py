@@ -3,7 +3,6 @@
 # USED FOR MULTIPROCESSING
 import multiprocessing
 
-
 #USED FOR SLEEP PROCESS
 from time import sleep
 
@@ -59,7 +58,6 @@ def TimeLoop(ArgsDict_):
     for timer in range(1,Waiting_Time_):
         sleep(1)
         print("Input File : "+str(InputFile_)+" Output File : "+str(OutputFile_)+" Process No. : "+str(ProcessNo_)+" Waiting for 1 sec @"+str(timer))
-
 
 
 if __name__ == '__main__':
