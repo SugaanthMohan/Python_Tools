@@ -1,0 +1,21 @@
+~ SYNOPSIS :
+
+	- The script is mainly used to improve the performance of the comparison based on key.
+		- Traditionally we find the first key and then the second and consecutive `N' number of keys, But this will slow your performance.
+		- So inorder to improve your performance, you can use this method of combining keys and then proceeding with matching them, 
+		- When comparing you have to create a search key similar to your super key and then search the super key field
+
+
+~ PYTHON VERSION : PYTHON 3.5
+
+~ PYTHON PACKAGES :
+
+	import pandas as pd
+	import numpy as np
+
+~ SCRIPT NAME : CreateSuperKey.py
+
+~ CONSTRAINTS :
+
+	- The Script requires a delimiter field to separate it from the other fields, and the delimiter must not contain in your fields list,
+	  even if it does, unless otherwise you have other plans with super key, The comparison results will be the same.

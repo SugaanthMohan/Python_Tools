@@ -1,0 +1,6 @@
+Field,Type,Null,Key,Default,Extra
+Employee_ID,int(11),NO,PRI,,
+Employee_Name,char(64),NO,PRI,,
+Employee_Team,char(10),No,,,
+Employee_Salary,DOUBLE,NO,,,
+Last_Update_Time,timestamp,NO,MUL,CURRENT_TIMESTAMP,
